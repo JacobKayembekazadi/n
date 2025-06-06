@@ -8,7 +8,7 @@ import Link from 'next/link';
 export default function HeroSection() {
   const [gradientAngle, setGradientAngle] = useState(135);
   const [taglineText, setTaglineText] = useState("");
-  const fullTagline = "AI-Enabled Full Stack Marketer at the forefront of digital transformation";
+  const fullTagline = "AI enabled Full Stack Marketer at the forefront of digital transformation";
   const heroRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
