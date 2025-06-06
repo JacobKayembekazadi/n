@@ -18,12 +18,11 @@ export default function AboutSection() {
             aria-label="Jacob Kazadi Kayembe portrait"
           >
             <Image 
-              src="https://placehold.co/288x288.png" 
+              src="/img/jacob-kazadi-kayembe-portrait.jpg" 
               alt="Jacob Kazadi Kayembe" 
               width={288} 
               height={288} 
               className="object-cover w-full h-full"
-              data-ai-hint="portrait professional"
             />
           </div>
         </div>
