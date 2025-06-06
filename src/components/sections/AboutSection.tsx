@@ -1,5 +1,6 @@
 import SectionWrapper from "@/components/SectionWrapper";
 import StrengthCard from "@/components/StrengthCard";
+import Image from "next/image";
 
 const Highlight = ({ children }: { children: React.ReactNode }) => (
   <span className="bg-gradient-to-r from-accent/20 to-primary/20 px-2 py-1 rounded-md font-semibold text-primary">
@@ -13,10 +14,17 @@ export default function AboutSection() {
       <div className="grid md:grid-cols-[1fr_2fr] gap-12 items-center mb-16">
         <div className="flex justify-center">
           <div 
-            className="w-64 h-64 md:w-72 md:h-72 rounded-full bg-gradient-to-br from-primary to-accent flex items-center justify-center text-6xl md:text-7xl font-bold text-primary-foreground shadow-2xl hover:scale-105 transition-transform duration-300 font-headline"
-            aria-label="Jacob Kazadi Kayembe initials"
+            className="w-64 h-64 md:w-72 md:h-72 rounded-full overflow-hidden bg-gradient-to-br from-primary to-accent flex items-center justify-center shadow-2xl hover:scale-105 transition-transform duration-300"
+            aria-label="Jacob Kazadi Kayembe portrait"
           >
-            JKK
+            <Image 
+              src="https://placehold.co/288x288.png" 
+              alt="Jacob Kazadi Kayembe" 
+              width={288} 
+              height={288} 
+              className="object-cover w-full h-full"
+              data-ai-hint="portrait professional"
+            />
           </div>
         </div>
         <div className="text-lg text-foreground/90 space-y-6">
